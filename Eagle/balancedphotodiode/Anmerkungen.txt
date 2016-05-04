@@ -1,0 +1,7 @@
+- Elkos brauchen mehr Platz, Löcher könnten etas weiter auseinander sein
+- Ich habe doch größere Kondensatoren an die OPs angelötet, genauen Wert weiß ich grerade 
+nicht mehr: einige nF
+- Löcher der Photodioden könnten etwas weiter auseinander sein
+- Es ist entspannter die IC Sockel von unten anzulöten als von oben
+- Der Autorouter versucht Verbindungen von Top und Bottom Layer zu verhinden. 
+Bei mir befindet sich eine solche direkt unter einem IC Sockel
