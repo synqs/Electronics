@@ -158,18 +158,18 @@
 <description>&lt;b&gt;Siemens Opto Transistors&lt;/b&gt;&lt;p&gt;
 &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
 <packages>
-<package name="SFH205">
+<package name="SFH206">
 <description>&lt;B&gt;PHOTO DIODE&lt;/B&gt;</description>
-<wire x1="0" y1="-2.54" x2="0" y2="2.54" width="0.1524" layer="21" curve="180"/>
-<wire x1="-1.524" y1="-2.032" x2="0" y2="-2.54" width="0.1524" layer="21" curve="36.869898"/>
-<wire x1="-1.524" y1="2.032" x2="0" y2="2.54" width="0.1524" layer="21" curve="-36.869898"/>
-<wire x1="-1.524" y1="-2.032" x2="-1.524" y2="1.397" width="0.1524" layer="21"/>
-<wire x1="-0.762" y1="2.413" x2="-1.524" y2="1.397" width="0.1524" layer="21"/>
-<wire x1="-1.524" y1="1.397" x2="-1.524" y2="2.032" width="0.1524" layer="21"/>
+<wire x1="0" y1="2.54" x2="0" y2="-2.54" width="0.1524" layer="21" curve="180"/>
+<wire x1="0" y1="2.54" x2="1.524" y2="2.032" width="0.1524" layer="21" curve="-36.869898"/>
+<wire x1="0" y1="-2.54" x2="1.524" y2="-2.032" width="0.1524" layer="21" curve="36.869898"/>
+<wire x1="1.524" y1="2.032" x2="1.524" y2="1.905" width="0.1524" layer="21"/>
+<wire x1="-1.651" y1="1.905" x2="1.524" y2="1.905" width="0.1524" layer="21"/>
+<wire x1="1.524" y1="1.905" x2="1.524" y2="-2.032" width="0.1524" layer="21"/>
 <pad name="A" x="0" y="-1.27" drill="0.8128" shape="long"/>
 <pad name="K" x="0" y="1.27" drill="0.8128" shape="long"/>
-<text x="3.175" y="0.381" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="3.175" y="-1.651" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<text x="1.905" y="-1.651" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="1.905" y="0.508" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
 </package>
 </packages>
 <symbols>
@@ -197,13 +197,13 @@
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="SFH205" prefix="D">
+<deviceset name="SFH206" prefix="D">
 <description>&lt;B&gt;PHOTO DIODE&lt;/B&gt;</description>
 <gates>
 <gate name="1" symbol="OED" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="SFH205">
+<device name="" package="SFH206">
 <connects>
 <connect gate="1" pin="A" pad="A"/>
 <connect gate="1" pin="C" pad="K"/>
@@ -211,9 +211,9 @@
 <technologies>
 <technology name="">
 <attribute name="MF" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
-<attribute name="OC_FARNELL" value="unknown" constant="no"/>
-<attribute name="OC_NEWARK" value="unknown" constant="no"/>
+<attribute name="MPN" value="SFH206K" constant="no"/>
+<attribute name="OC_FARNELL" value="1212741" constant="no"/>
+<attribute name="OC_NEWARK" value="01M8807" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -6522,10 +6522,9 @@ DIN A4, landscape with location and doc. field</description>
 </class>
 </classes>
 <parts>
-<part name="D1" library="opto-trans-siemens" deviceset="SFH205" device=""/>
+<part name="D1" library="opto-trans-siemens" deviceset="SFH206" device=""/>
 <part name="IC1" library="linear" deviceset="OP27" device="Z"/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
-<part name="P-1" library="supply1" deviceset="-12V" device=""/>
 <part name="R1" library="resistor" deviceset="R-EU_" device="M1206" value="10k"/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
@@ -6558,10 +6557,9 @@ DIN A4, landscape with location and doc. field</description>
 <plain>
 </plain>
 <instances>
-<instance part="D1" gate="1" x="106.68" y="83.82"/>
+<instance part="D1" gate="1" x="106.68" y="86.36" rot="R90"/>
 <instance part="IC1" gate="A" x="157.48" y="91.44"/>
 <instance part="GND1" gate="1" x="144.78" y="93.98" rot="R270"/>
-<instance part="P-1" gate="1" x="106.68" y="66.04"/>
 <instance part="R1" gate="G$1" x="160.02" y="71.12"/>
 <instance part="GND2" gate="1" x="185.42" y="83.82"/>
 <instance part="GND3" gate="1" x="185.42" y="99.06"/>
@@ -6658,22 +6656,6 @@ DIN A4, landscape with location and doc. field</description>
 <pinref part="MONITOR" gate="1" pin="P"/>
 </segment>
 </net>
-<net name="N$1" class="0">
-<segment>
-<pinref part="IC1" gate="A" pin="-IN"/>
-<wire x1="144.78" y1="88.9" x2="149.86" y2="88.9" width="0.1524" layer="91"/>
-<pinref part="R1" gate="G$1" pin="1"/>
-<pinref part="C5" gate="G$1" pin="1"/>
-<wire x1="144.78" y1="88.9" x2="144.78" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="144.78" y1="71.12" x2="154.94" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="144.78" y1="71.12" x2="144.78" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="144.78" y1="60.96" x2="157.48" y2="60.96" width="0.1524" layer="91"/>
-<junction x="144.78" y="71.12"/>
-<pinref part="D1" gate="1" pin="A"/>
-<wire x1="106.68" y1="86.36" x2="144.78" y2="88.9" width="0.1524" layer="91"/>
-<junction x="144.78" y="88.9"/>
-</segment>
-</net>
 <net name="V+" class="0">
 <segment>
 <pinref part="P+2" gate="1" pin="+12V"/>
@@ -6705,19 +6687,36 @@ DIN A4, landscape with location and doc. field</description>
 <junction x="154.94" y="81.28"/>
 </segment>
 <segment>
-<pinref part="P-1" gate="1" pin="-12V"/>
-<wire x1="106.68" y1="68.58" x2="106.68" y2="78.74" width="0.1524" layer="91"/>
-<pinref part="D1" gate="1" pin="C"/>
-</segment>
-<segment>
 <pinref part="P-3" gate="1" pin="-12V"/>
 <wire x1="63.5" y1="93.98" x2="58.42" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="58.42" y1="93.98" x2="58.42" y2="88.9" width="0.1524" layer="91"/>
 <pinref part="C2" gate="G$1" pin="1"/>
-<wire x1="63.5" y1="83.82" x2="63.5" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="63.5" y1="83.82" x2="63.5" y2="86.36" width="0.1524" layer="91"/>
 <junction x="63.5" y="93.98"/>
 <pinref part="V-" gate="1" pin="P"/>
+<wire x1="63.5" y1="86.36" x2="63.5" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="76.2" y1="93.98" x2="63.5" y2="93.98" width="0.1524" layer="91"/>
+<pinref part="D1" gate="1" pin="A"/>
+<wire x1="104.14" y1="86.36" x2="63.5" y2="86.36" width="0.1524" layer="91"/>
+<junction x="63.5" y="86.36"/>
+</segment>
+</net>
+<net name="N$3" class="0">
+<segment>
+<pinref part="D1" gate="1" pin="C"/>
+<wire x1="111.76" y1="86.36" x2="127" y2="86.36" width="0.1524" layer="91"/>
+<pinref part="IC1" gate="A" pin="-IN"/>
+<wire x1="144.78" y1="88.9" x2="149.86" y2="88.9" width="0.1524" layer="91"/>
+<pinref part="R1" gate="G$1" pin="1"/>
+<pinref part="C5" gate="G$1" pin="1"/>
+<wire x1="144.78" y1="88.9" x2="144.78" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="71.12" x2="154.94" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="71.12" x2="144.78" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="60.96" x2="157.48" y2="60.96" width="0.1524" layer="91"/>
+<junction x="144.78" y="71.12"/>
+<wire x1="144.78" y1="88.9" x2="127" y2="88.9" width="0.1524" layer="91"/>
+<junction x="144.78" y="88.9"/>
+<wire x1="127" y1="86.36" x2="127" y2="88.9" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
