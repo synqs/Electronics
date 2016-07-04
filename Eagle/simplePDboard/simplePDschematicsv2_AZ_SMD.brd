@@ -1594,7 +1594,7 @@ You can set larger minimum values if you wish but if you change to smaller minim
 <attribute name="NAME" x="11.365" y="2.206" size="1.27" layer="25" ratio="10"/>
 <attribute name="VALUE" x="8.19" y="0.809" size="1.27" layer="27" ratio="10"/>
 </element>
-<element name="IC1" library="linear" package="DIL08" value="OP27Z" x="14.859" y="15.113" smashed="yes" rot="R270">
+<element name="IC1" library="linear" package="DIL08" value="TL071P" x="14.859" y="15.113" smashed="yes" rot="R270">
 <attribute name="NAME" x="13.843" y="11.557" size="1.27" layer="25" ratio="10"/>
 <attribute name="VALUE" x="10.668" y="8.128" size="1.27" layer="27" ratio="10"/>
 </element>

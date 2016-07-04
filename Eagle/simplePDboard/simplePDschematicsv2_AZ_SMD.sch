@@ -226,24 +226,6 @@
 Operational amplifiers,  comparators, voltage regulators, ADCs, DACs, etc.&lt;p&gt;
 &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
 <packages>
-<package name="TO99">
-<description>&lt;b&gt;Metal Can Package&lt;/b&gt;</description>
-<wire x1="-4.572" y1="0.508" x2="-5.334" y2="0.508" width="0.1524" layer="21"/>
-<wire x1="-5.334" y1="-0.508" x2="-5.334" y2="0.508" width="0.1524" layer="21"/>
-<wire x1="-5.334" y1="-0.508" x2="-4.572" y2="-0.508" width="0.1524" layer="21"/>
-<circle x="0" y="0" radius="4.572" width="0.1524" layer="21"/>
-<circle x="0" y="0" radius="3.8608" width="0.0508" layer="21"/>
-<pad name="4" x="2.54" y="0" drill="0.8128" shape="octagon"/>
-<pad name="8" x="-2.54" y="0" drill="0.8128" shape="octagon"/>
-<pad name="2" x="0" y="-2.54" drill="0.8128" shape="octagon"/>
-<pad name="6" x="0" y="2.54" drill="0.8128" shape="octagon"/>
-<pad name="1" x="-1.778" y="-1.778" drill="0.8128" shape="octagon"/>
-<pad name="3" x="1.778" y="-1.778" drill="0.8128" shape="octagon"/>
-<pad name="5" x="1.778" y="1.778" drill="0.8128" shape="octagon"/>
-<pad name="7" x="-1.778" y="1.778" drill="0.8128" shape="octagon"/>
-<text x="-2.54" y="4.826" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-2.667" y="-5.969" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-</package>
 <package name="SO08">
 <description>&lt;b&gt;Small Outline Package 8&lt;/b&gt;&lt;br&gt;
 NS Package M08A</description>
@@ -324,19 +306,19 @@ NS Package M08A</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="OP27" prefix="IC">
+<deviceset name="TL071" prefix="IC">
 <description>&lt;b&gt;OP AMP&lt;/b&gt;</description>
 <gates>
 <gate name="A" symbol="2NUL" x="5.08" y="0"/>
 </gates>
 <devices>
-<device name="J" package="TO99">
+<device name="P" package="DIL08">
 <connects>
 <connect gate="A" pin="+IN" pad="3"/>
 <connect gate="A" pin="-IN" pad="2"/>
 <connect gate="A" pin="ON1" pad="1"/>
-<connect gate="A" pin="ON2" pad="8"/>
-<connect gate="A" pin="OPT" pad="5"/>
+<connect gate="A" pin="ON2" pad="5"/>
+<connect gate="A" pin="OPT" pad="8"/>
 <connect gate="A" pin="OUT" pad="6"/>
 <connect gate="A" pin="V+" pad="7"/>
 <connect gate="A" pin="V-" pad="4"/>
@@ -350,23 +332,8 @@ NS Package M08A</description>
 <connect gate="A" pin="+IN" pad="3"/>
 <connect gate="A" pin="-IN" pad="2"/>
 <connect gate="A" pin="ON1" pad="1"/>
-<connect gate="A" pin="ON2" pad="8"/>
-<connect gate="A" pin="OPT" pad="5"/>
-<connect gate="A" pin="OUT" pad="6"/>
-<connect gate="A" pin="V+" pad="7"/>
-<connect gate="A" pin="V-" pad="4"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="Z" package="DIL08">
-<connects>
-<connect gate="A" pin="+IN" pad="3"/>
-<connect gate="A" pin="-IN" pad="2"/>
-<connect gate="A" pin="ON1" pad="1"/>
-<connect gate="A" pin="ON2" pad="8"/>
-<connect gate="A" pin="OPT" pad="5"/>
+<connect gate="A" pin="ON2" pad="5"/>
+<connect gate="A" pin="OPT" pad="8"/>
 <connect gate="A" pin="OUT" pad="6"/>
 <connect gate="A" pin="V+" pad="7"/>
 <connect gate="A" pin="V-" pad="4"/>
@@ -6523,7 +6490,7 @@ DIN A4, landscape with location and doc. field</description>
 </classes>
 <parts>
 <part name="D1" library="opto-trans-siemens" deviceset="SFH206" device=""/>
-<part name="IC1" library="linear" deviceset="OP27" device="Z"/>
+<part name="IC1" library="linear" deviceset="TL071" device="P"/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="R1" library="resistor" deviceset="R-EU_" device="M1206" value="10k"/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
@@ -6722,13 +6689,6 @@ DIN A4, landscape with location and doc. field</description>
 </nets>
 </sheet>
 </sheets>
-<errors>
-<approved hash="102,1,45.72,48.26,-12V,V-,,,,"/>
-<approved hash="102,1,93.98,91.44,+12V,V+,,,,"/>
-<approved hash="102,1,93.98,58.42,-12V,V-,,,,"/>
-<approved hash="102,1,-2.54,88.9,+12V,V+,,,,"/>
-<approved hash="102,1,-2.54,68.58,-12V,V-,,,,"/>
-</errors>
 </schematic>
 </drawing>
 </eagle>
