@@ -11,7 +11,11 @@ in a polarization spectroscopy and worked fine.
 
 Just a simple board to have a transimpedence attached to the normal OSRAM PD.
 
-## Magnetometer readout
+## MagneticFieldSensor
 
 We should add this here as it was the main project to the 18bit DAC and the 
 digi-poti adapter.
+
+## others
+
+the other projects were created before mostly by Marcell Gall.
