@@ -6504,7 +6504,7 @@ DIN A4, landscape with location and doc. field</description>
 <part name="C2" library="resistor" deviceset="C-EU" device="050-075X075" value="2uF"/>
 <part name="C3" library="resistor" deviceset="C-EU" device="025-050X050" value="1nF"/>
 <part name="C4" library="resistor" deviceset="C-EU" device="025-050X050" value="1nF"/>
-<part name="C5" library="resistor" deviceset="C-EU" device="025-050X050" value="4,7pF"/>
+<part name="C5" library="resistor" deviceset="C-EU" device="025-050X050" value="100pF"/>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
