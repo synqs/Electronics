@@ -1,4 +1,6 @@
-# Electronics in the matterwave 
+This project is licensed under the terms of the MIT license.
+
+# Electronics in the SynQS collaboration 
 
 Here we have several electronics projects. 
 
@@ -18,4 +20,4 @@ digi-poti adapter.
 
 ## others
 
-the other projects were created before mostly by Marcell Gall.
+the other projects were created before.
